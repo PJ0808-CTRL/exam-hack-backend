@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Get OpenAI API key from environment variable
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = os.environ.get("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")
 
 @app.route('/generate-plan', methods=['POST'])
 def generate_plan():
